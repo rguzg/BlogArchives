@@ -22,7 +22,9 @@ Now try printing to the console `foo.prototype`, you'll get something like this:
 
 The `prototype` property of a function is where the prototype that will be assigned to a brand new object when using the `new` keyword is stored. Let's examine what's inside this object:
 - The `constructor` property stores a reference to the function that is being used as the new object's constructor
-- The ``[[Prototype]]`` property stores the property that will be assigned to the new object. In this case, the new object is inheriting from `Object`, this makes functions like `isPrototypeOf` available to the newly created object.
+- The ``[[Prototype]]`` property stores the prototype that `prototype` is inheriting from. In this case, the new object is inheriting from `Object`, this makes functions like `isPrototypeOf` available to the newly created object.
+
+As a side note: `prototype` and `[[Protoype]]` are two different properties. `prototype` stores the prototype that will be assigned to a brand new object when using the `new` keyword. `[[Prototype]]` stores the prototype that the object inherits from.
 
 Now, what would happen if we wanted to add something to the new object's prototype? Type the following on the browser console:
 
@@ -39,7 +41,7 @@ And then print `foo.prototype` to the console:
     [[Prototype]]: Object
 ```
 
-There's the `inheritedProperty` we added to `foo.property`! When we created a new `foo` type object, it'll inherit that `inheritedProperty` property.
+There's the `inheritedProperty` we added to `foo.property`! When we create a new `foo` type object, it'll inherit that `inheritedProperty` property. Any already existing objects that are an instance of `foo` will also have that property.
 
 JavaScript knows which prototype to assign to a brand new object by looking for a function's `prototype` property.
 
