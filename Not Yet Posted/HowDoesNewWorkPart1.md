@@ -47,6 +47,6 @@ JavaScript knows which prototype to assign to a brand new object by looking for 
 
 As an exercise to the reader: Why can't the constructor function be an arrow function? There's two right answers!
 
-Next time, we'll look at what JavaScript's doing internally when using the `new` keyword.
+[Next time](./HowDoesNewWorkPart2.md), we'll look at what JavaScript's doing internally when using the `new` keyword.
 
 [^1]:  `null` and `undefined` aren't objects
