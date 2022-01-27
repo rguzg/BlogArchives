@@ -108,4 +108,4 @@ console.log(Eren.inheritedProperty);
 undefined
 ```
 
-Our custom object is not inheriting things properly! We'll see why this is happening and how to fix it next time.
+Our custom object is not inheriting things properly! We'll see why this is happening and how to fix it [next time.](./HowDoesNewWorkPart3.md)
