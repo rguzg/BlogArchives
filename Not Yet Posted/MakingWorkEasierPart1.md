@@ -25,6 +25,7 @@ Now, let's imagine that the first feature to be developed for Windows 12 is supp
 - 🟩: Dev commits
 - 🟨: Feature commits
 
+```
 🟦 <- main
  |
 🟩 ------------ 🟩 ----------------- 🟩     <- dev
@@ -32,6 +33,7 @@ Now, let's imagine that the first feature to be developed for Windows 12 is supp
 🟨 - 🟨 - 🟨 - 🟨    |               |     <- feature/TwoTPMs
                        |               |
                       🟨 - 🟨 - 🟨 - 🟨    <- feature/RevampStartMenu
+```
 
 ## Release branches
 A release branch is created when the `dev` branch has enough features to justify a release, or when a release date is approaching. **No new features are introduced in these branches**. The only changes that are introduced in these branches are bug fixes, documentation or additional tests. When the release branch is ready, it's merged into `main`, tagging that commit with a new version number and merged back into dev (this is because important bug fixes might be introduced in the release branch).
