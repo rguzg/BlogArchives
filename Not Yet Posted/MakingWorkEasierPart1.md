@@ -47,6 +47,7 @@ Let's go back to our imaginary Windows 12 repo and let's say that it's time for 
 - 🟨: Feature commits
 - 🟪: Release commits
 
+```
                                                 version 22800 
                                                        |
                                                        v  
@@ -60,6 +61,7 @@ Let's go back to our imaginary Windows 12 repo and let's say that it's time for 
 🟨 - 🟨 - 🟨 - 🟨    |               |     <- feature/TwoTPMs
                        |               |
                       🟨 - 🟨 - 🟨 - 🟨    <- feature/RevampStartMenu
+```
 
 ## Hotfix branches
 The final branch type defined by Git Flow are Hotfix branches, these branches are used to quickly patch production releases. **These branches are the only ones that are based on main and not on dev** (so that the hotfix doesn't include features that aren't ready yet). When the hotfix is finished, the branch is merged onto `main`, `dev` and any active `release` branches.
