@@ -74,6 +74,7 @@ Imagine that during the preparation of release 22900, a bug is discovered in pro
 - 🟪: Release commits
 - 🟧: Hotfix commits
 
+```
                                                 version 22800                                     version 22850
                                                        |                                                |
                                                        v                                                v
@@ -90,5 +91,6 @@ Imagine that during the preparation of release 22900, a bug is discovered in pro
 🟨 - 🟨 - 🟨 - 🟨    |               |     <- feature/TwoTPMs
                        |               |
                       🟨 - 🟨 - 🟨 - 🟨    <- feature/RevampStartMenu
+```
 
 So that's a basic rundown of Git Flow! Though I do wanna mention that although Git Flow  has its advantages, it also has some disadvantages, like making merging code harder (because when merging you're probably merging a lot of commits at once) as well as having an increased probability of merge conflicts between branches (like if two developers modify the same file on different feature branches). I encourage you to find the Git workflow that best fits your current team. You can checkout more workflows [here](https://www.atlassian.com/git/tutorials/comparing-workflows)
