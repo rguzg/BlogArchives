@@ -38,7 +38,7 @@ Now, let's imagine that the first feature to be developed for Windows 12 is supp
 ## Release branches
 A release branch is created when the `dev` branch has enough features to justify a release, or when a release date is approaching. **No new features are introduced in these branches**. The only changes that are introduced in these branches are bug fixes, documentation or additional tests. When the release branch is ready, it's merged into `main`, tagging that commit with a new version number and merged back into dev (this is because important bug fixes might be introduced in the release branch).
 
-Separating releases into different branches allows developers to continue to push new changes into develop without worrying about breaking the release.
+Separating releases into different branches allows developers to continue to push new changes into the dev branch without worrying about breaking the release.
 
 Let's go back to our imaginary Windows 12 repo and let's say that it's time for the first Insider build (version 22800) to be released:
 
